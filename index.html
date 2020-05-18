@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fitness surveyform</title>
+  </head>
+  <body>
+    <h1 id="title">Fitness & Wellness Questionnaire</h1>
+    <p id="description">Thanks for taking time to submit the survey</p>
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"  required/>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          id="number"
+          min="18"
+          max="80"
+          placeholder="Enter your age"
+        />
+      </div>
+      <div class="form-group">
+        <label for="current-role" id="number-label"
+          >What is your current Role?</label
+        >
+        <select name="current-role" id="dropdown">
+          <option value="current-role">Select Current Role</option>
+          <option value="student">Student</option>
+          <option value="employed">Employed</option>
+          <option value="business-Person">Business Person</option>
+          <option value="retired">Retired</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="workout-repeat" id="number-label"
+          >How often do you workout?
+        </label>
+      </div>
+      <div>
+        <input type="radio" name="workout-repeat" value="no-days" />
+        <label for="no-days"> 0 days/week</label>
+      </div>
+      <div>
+        <input type="radio" name="workout-repeat" value="two-days" />
+        <label for="two-days"> 1-2 days</label>
+      </div>
+      <div>
+        <input type="radio" name="workout-repeat" value="four-days" />
+        <label for="four-days">3-4 days </label>
+      </div>
+      <div class="input-group">
+        <input type="radio" name="workout-repeat" value="five-days" />
+        <label for="five-days"> 5+ days</label>
+      </div>
+      <div class="form-group">
+        <label for="workout-location" id="number-label"
+          >where do you workout?
+        </label>
+      </div>
+      <div>
+        <input type="checkbox" name="Gym" value="Gym"/>
+        <label for="Gym">Gym</label>
+      </div>
+      <div>
+        <input type="checkbox" name="personal-trainer" value="personal-trainer/>
+              <label for="personal-trainer>Personal Trainer</label>
+      </div>
+        <div>
+          <input type="checkbox" name="group-classes" value="group-classes/>
+                      <label for="group-classes>Group Classes</label>
+        </div>
+          <div>
+            <input type="checkbox" name="workout-videos" value="workout-videos/>
+                        <label for="workout-videos>Workout Videos</label>
+          </div>
+
+      <div class="form-group">
+        <label id="workout-challenge-label" for="workout-challenge"
+          >What's your biggest challenge when it comes to achieving your fitness
+          and wellness goals?
+        </label>
+        <textarea for="workout-challenge" name="workout-challenge" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

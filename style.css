@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(
+      115deg,
+      rgba(255, 205, 178, 0.8),
+      rgba(109, 104, 117, 0.5)
+    ),
+    url("https://images.pexels.com/photos/4164770/pexels-photo-4164770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-attachment: scroll;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  height: 100vh;
+  width: 100vw;
+}
+h1,p {
+  font-family: "Mukta", sans-serif;
+  width: 100%;
+  margin-left: 380px;
+}
+p{
+font-weight:100;
+}
+form {
+  /* // background-color: #6d6875; */
+  align-items: center;
+  padding: 2.5rem 0.625rem;
+  font-weight: 400;
+  margin: 20px auto;
+  height: 75vh;
+  width: 50vw;
+  font-family: "Mukta", sans-serif;
+}
+.form-group{|
+   display: flex;
+   align-items: center;
+}
+label {
+  margin-bottom: 0.1rem;
+}
+input {
+  margin: 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="textarea"],
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border: 1px, solid, #000000;
+}
+
+button {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 12px 0;
+  background-color: rgb(84, 196, 93);
+}
+.input-group {
+  display: inline;
+}
+textarea{
+  width: 100%;
+  border: 1px, solid, #000000;
+}
